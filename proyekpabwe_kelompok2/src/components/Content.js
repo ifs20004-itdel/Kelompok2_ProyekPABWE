@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import coba from "../Assets/coba.jpg";
 import coba1 from "../Assets/coba1.jpg";
 import coba2 from "../Assets/coba2.jpg";
+import { } from "react-bootstrap-icons";
 
 const ColoredLine = ({ color }) => (
   <hr
@@ -160,6 +161,10 @@ function content() {
           </Form>
         </Card>
       </CardGroup>
+     < CardGroup>
+        <Card>
+        </Card>                
+     </CardGroup>
     </>
   );
 }

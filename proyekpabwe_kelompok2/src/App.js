@@ -12,6 +12,7 @@ function App(){
       <NavbarComp/>
       <Carousel/>
       <Content/>
+      
     </div>
   );
 }
