@@ -161,16 +161,9 @@ function content() {
           </Form>
         </Card>
       </CardGroup>
-<<<<<<< HEAD
-     < CardGroup>
-        <Card>
-        </Card>                
-     </CardGroup>
-=======
       <CardGroup>
         <Card></Card>
       </CardGroup>
->>>>>>> 4db5de36c293edbe83a66e679bf69a70a02db285
     </>
   );
 }
