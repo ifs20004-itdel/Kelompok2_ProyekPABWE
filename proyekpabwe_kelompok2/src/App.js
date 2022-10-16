@@ -13,11 +13,7 @@ function App(){
       <NavbarComp/>
       <Carousel/>
       <Content/>
-<<<<<<< HEAD
-      
-=======
       <Footer/>
->>>>>>> 4db5de36c293edbe83a66e679bf69a70a02db285
     </div>
   );
 }
