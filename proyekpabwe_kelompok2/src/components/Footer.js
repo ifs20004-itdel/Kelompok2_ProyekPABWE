@@ -2,7 +2,7 @@
 function Footer(){
     return(
             <>
-    <div class="container pt-5 pb-5 d-flex justify-content-between">
+    <div class=" text-light py-5 d-flex justify-content-center bg-primary ">
       <div class="footer-story col-md-4 mb-3">
         <h5>Tentang Informatika</h5>
         <p class="mt-4">
@@ -10,7 +10,7 @@ function Footer(){
           Informatika dan Elektro di Institut Teknologi Del.
         </p>
       </div>
-      <div class="footer-hubungi-kami col-md-3 mb-3">
+      <div class="footer-hubungi-kami col-md-3 mb-3 ">
         <h5>Hubungi Kami</h5>
         <div class="d-flex justify-content-start mt-4">
           <span class="material-icons me-3"> location_on </span>
@@ -36,7 +36,7 @@ function Footer(){
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container d-flex justify-content-center align-items-center p-5">CopyRight <span class="material-icons me-2 ms-2"> copyright </span> 2021 Program Studi Informatika. All Rights Reserved.</div>
+      <div class="d-flex justify-content-center align-items-center p-2"><span class="material-icons me-2 ms-2"> Copyright </span> 2021 Program Studi Informatika. All Rights Reserved.</div>
     </div>
             </>
     );
