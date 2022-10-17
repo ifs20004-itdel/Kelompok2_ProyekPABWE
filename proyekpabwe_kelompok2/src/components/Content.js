@@ -6,7 +6,7 @@ import Form from "react-bootstrap/Form";
 import coba from "../Assets/coba.jpg";
 import coba1 from "../Assets/coba1.jpg";
 import coba2 from "../Assets/coba2.jpg";
-import { } from "react-bootstrap-icons";
+import { Mortarboard, People, JournalBookmark,EmojiLaughing } from "react-bootstrap-icons";
 import "./Style.css";
 
 const ColoredLine = ({ color }) => (
@@ -168,8 +168,35 @@ function content() {
           </Form>
         </Card>
       </CardGroup>
-      <CardGroup>
-        <Card></Card>
+      <CardGroup className="container my-5">
+        <Card className="p-3 scaling border-0 d-flex flex-row ">
+          <Mortarboard size={55} color={"royalblue"} className={"m-auto"}></Mortarboard>
+          <Card.Body>
+            <Card.Title>Mahasiswa</Card.Title>
+            <Card.Text>Coba</Card.Text>
+          </Card.Body>
+        </Card>
+        <Card className="p-3 scaling border-0 d-flex flex-row">
+          <People size={55} color={"royalblue"} className={"m-auto"}></People>
+            <Card.Body>
+              <Card.Title>Dosen & Staff</Card.Title>
+              <Card.Text>Coba</Card.Text>
+            </Card.Body> 
+        </Card>
+        <Card className="p-3 scaling border-0 d-flex flex-row">
+          <JournalBookmark size={50} color={"royalblue"} className={"m-auto"}></JournalBookmark>
+          <Card.Body>
+              <Card.Title>Publikasi</Card.Title>
+              <Card.Text>Coba</Card.Text>
+          </Card.Body> 
+        </Card>
+        <Card className="p-3 scaling border-0 d-flex flex-row">
+          <EmojiLaughing size={50} color={"royalblue"} className={"m-auto"}></EmojiLaughing>
+          <Card.Body>
+              <Card.Title>Kepuasan Layanan</Card.Title>
+              <Card.Text>Coba</Card.Text>
+          </Card.Body> 
+        </Card>
       </CardGroup>
     </>
   );

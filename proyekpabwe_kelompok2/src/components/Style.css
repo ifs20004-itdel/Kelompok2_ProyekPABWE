@@ -16,7 +16,9 @@
 .card-img:hover{
     transform: scale(1.3);
 }
-
+.scaling:hover{
+    transform: scale(1.05);
+}
 
 
 
