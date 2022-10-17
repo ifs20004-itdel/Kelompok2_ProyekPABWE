@@ -170,28 +170,28 @@ function content() {
       </CardGroup>
       <CardGroup className="container my-5">
         <Card className="p-3 scaling border-0 d-flex flex-row ">
-          <Mortarboard size={55} color={"royalblue"} className={"m-auto"}></Mortarboard>
+          <Mortarboard size={60} color={"royalblue"} className={"m-auto"}></Mortarboard>
           <Card.Body>
             <Card.Title>Mahasiswa</Card.Title>
             <Card.Text>Coba</Card.Text>
           </Card.Body>
         </Card>
         <Card className="p-3 scaling border-0 d-flex flex-row">
-          <People size={55} color={"royalblue"} className={"m-auto"}></People>
+          <People size={60} color={"royalblue"} className={"m-auto"}></People>
             <Card.Body>
               <Card.Title>Dosen & Staff</Card.Title>
               <Card.Text>Coba</Card.Text>
             </Card.Body> 
         </Card>
         <Card className="p-3 scaling border-0 d-flex flex-row">
-          <JournalBookmark size={50} color={"royalblue"} className={"m-auto"}></JournalBookmark>
+          <JournalBookmark size={55} color={"royalblue"} className={"m-auto"}></JournalBookmark>
           <Card.Body>
               <Card.Title>Publikasi</Card.Title>
               <Card.Text>Coba</Card.Text>
           </Card.Body> 
         </Card>
         <Card className="p-3 scaling border-0 d-flex flex-row">
-          <EmojiLaughing size={50} color={"royalblue"} className={"m-auto"}></EmojiLaughing>
+          <EmojiLaughing size={55} color={"royalblue"} className={"m-auto"}></EmojiLaughing>
           <Card.Body>
               <Card.Title>Kepuasan Layanan</Card.Title>
               <Card.Text>Coba</Card.Text>
