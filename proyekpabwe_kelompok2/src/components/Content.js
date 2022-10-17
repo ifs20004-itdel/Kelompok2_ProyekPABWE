@@ -7,6 +7,7 @@ import coba from "../Assets/coba.jpg";
 import coba1 from "../Assets/coba1.jpg";
 import coba2 from "../Assets/coba2.jpg";
 import { Mortarboard, People, JournalBookmark,EmojiLaughing } from "react-bootstrap-icons";
+import CountUp from "react-countup";
 import "./Style.css";
 
 const ColoredLine = ({ color }) => (
@@ -86,8 +87,7 @@ function content() {
             </Card.Title>
             <Card.Text>
               Program Pembinaan Mahasiswa Wirausaga (P2MW) merupakan program
-              pengembangan usaha mahasiswa yang telah memiliki usaha melalui
-              batuan dana pengembangan ...
+              pengembangan usaha mahasiswa yang telah memiliki ...
             </Card.Text>
             <Button variant="primary">Lihat Selengkapnya</Button>
           </Card.Body>
@@ -106,8 +106,7 @@ function content() {
             <Card.Text>
               Dalam memperingati se-windu Fakultas Informatika dan Teknik
               Elektro (FITE), FITE melakukan perlombaan E-Sport yang melibatkan
-              para mahasiswa FITE. Beragam permainan E-Sport yang diperlombakan
-              seperti Mobile Legend, Free Fire, ...
+              para mahasiswa FITE. Beragam permainan ...
             </Card.Text>
             <Button variant="primary">Lihat Selengkapnya</Button>
           </Card.Body>
@@ -126,8 +125,7 @@ function content() {
             <Card.Text>
               Pada hari Sabtu 3 September 2022, 426 Mahasiswa Institut Teknologi
               Del resmi dikukuhkan pada Kegiatan Inaugurasi dan Dies Natalis
-              bertempat di Gedung Serba Guna Yayasan Del. Kegiatan ini dihadiri
-              oleh Bapak Jenderal...
+              bertempat ...
             </Card.Text>
             <Button variant="primary">Lihat Selengkapnya</Button>
           </Card.Body>
@@ -173,28 +171,37 @@ function content() {
           <Mortarboard size={60} color={"royalblue"} className={"m-auto"}></Mortarboard>
           <Card.Body>
             <Card.Title>Mahasiswa</Card.Title>
-            <Card.Text>Coba</Card.Text>
+            <Card.Text>
+                <CountUp isCounting end={1020} duration={3.2} />
+            </Card.Text>
           </Card.Body>
         </Card>
         <Card className="p-3 scaling border-0 d-flex flex-row">
           <People size={60} color={"royalblue"} className={"m-auto"}></People>
             <Card.Body>
               <Card.Title>Dosen & Staff</Card.Title>
-              <Card.Text>Coba</Card.Text>
+              <Card.Text>
+                <CountUp isCounting end={50} duration={3.2} />
+              </Card.Text>
             </Card.Body> 
         </Card>
         <Card className="p-3 scaling border-0 d-flex flex-row">
           <JournalBookmark size={55} color={"royalblue"} className={"m-auto"}></JournalBookmark>
           <Card.Body>
               <Card.Title>Publikasi</Card.Title>
-              <Card.Text>Coba</Card.Text>
+              <Card.Text>
+                <CountUp isCounting end={141} duration={3.2} />
+              </Card.Text>
           </Card.Body> 
         </Card>
         <Card className="p-3 scaling border-0 d-flex flex-row">
           <EmojiLaughing size={55} color={"royalblue"} className={"m-auto"}></EmojiLaughing>
           <Card.Body>
               <Card.Title>Kepuasan Layanan</Card.Title>
-              <Card.Text>Coba</Card.Text>
+              <Card.Text>
+                <CountUp isCounting end={90} duration={3.2} />%
+              </Card.Text>
+              {/* <Card.Text>Coba</Card.Text> */}
           </Card.Body> 
         </Card>
       </CardGroup>

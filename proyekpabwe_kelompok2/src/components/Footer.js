@@ -36,7 +36,7 @@ function Footer(){
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="d-flex justify-content-center align-items-center p-2"><span class="material-icons me-2 ms-2"> Copyright </span> 2021 Program Studi Informatika. All Rights Reserved.</div>
+      <div class="d-flex justify-content-center align-items-center p-2"><span class="material-icons me-2 ms-2"> Copyright </span> 2022 Program Studi Informatika. All Rights Reserved.</div>
     </div>
             </>
     );
