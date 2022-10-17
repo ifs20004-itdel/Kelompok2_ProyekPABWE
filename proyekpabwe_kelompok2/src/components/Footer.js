@@ -3,14 +3,14 @@ function Footer(){
     return(
             <>
     <div class=" text-light py-5 d-flex justify-content-center bg-primary ">
-      <div class="footer-story col-md-4 mb-3">
+      <div class="footer-story col-md-4 mb-3 mx-5">
         <h5>Tentang Informatika</h5>
         <p class="mt-4">
           Program Studi S1 Teknik Informatika merupakan salah satu dari 4 program studi di bawah Fakultas Teknik 
           Informatika dan Elektro di Institut Teknologi Del.
         </p>
       </div>
-      <div class="footer-hubungi-kami col-md-3 mb-3 ">
+      <div class="footer-hubungi-kami col-md-3 mb-3 mx-5 ">
         <h5>Hubungi Kami</h5>
         <div class="d-flex justify-content-start mt-4">
           <span class="material-icons me-3"> location_on </span>
@@ -26,7 +26,7 @@ function Footer(){
           </p>
         </div>
       </div>
-      <div class="footer-sosmed col-md-3 mb-3">
+      <div class="footer-sosmed col-md-3 mb-3 ">
         <h5>Sosial Media</h5>
         <div class="icon-sosial-media d-flex mt-4">
           <a class="text-white" href="https://www.facebook.com/Institut.Teknologi.Del/" target="_blank"><i class="bx bxl-facebook-square me-3"></i></a>

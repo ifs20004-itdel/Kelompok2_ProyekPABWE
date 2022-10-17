@@ -7,6 +7,7 @@ import coba from "../Assets/coba.jpg";
 import coba1 from "../Assets/coba1.jpg";
 import coba2 from "../Assets/coba2.jpg";
 import { } from "react-bootstrap-icons";
+import "./Style.css";
 
 const ColoredLine = ({ color }) => (
   <hr
@@ -69,14 +70,16 @@ function content() {
         <h3 className="w-100">Event Terkini</h3>
         <a className="w-100 position text-end">Lihat lebih banyak</a>
       </div>
-      <CardGroup className="container py-3 ">
+      <CardGroup className="container py-3">
         <Card
           data-aos="flip-left"
           data-aos-duration="1500"
           style={{ width: "18rem" }}
-          className="container rounded-5"
+          className="rounded-3 kartu mx-2"
         >
-          <Card.Img variant="top" src={coba} className="rounded-3 py-3" />
+          <div className="overflow-hidden">
+          <Card.Img variant="top" src={coba} className="card-img rounded-3" />
+          </div>
           <Card.Body>
             <Card.Title>
               Program Pembinaan Mahasiswa Wirausaha (P2MW)
@@ -93,9 +96,11 @@ function content() {
           data-aos="flip-left"
           data-aos-duration="1500"
           style={{ width: "18rem" }}
-          className="container rounded-5"
+          className="rounded-3 kartu mx-2" 
         >
-          <Card.Img variant="top" src={coba1} className="rounded-3 py-3" />
+          <div className="overflow-hidden">
+            <Card.Img variant="top" src={coba1} className="card-img rounded-3" />
+          </div>
           <Card.Body>
             <Card.Title>FITE E-SPORT</Card.Title>
             <Card.Text>
@@ -111,9 +116,11 @@ function content() {
           data-aos="flip-left"
           data-aos-duration="1500"
           style={{ width: "18rem" }}
-          className="container rounded-5"
+          className="rounded-3 kartu mx-2"
         >
-          <Card.Img variant="top" src={coba2} className="rounded-3 py-3" />
+          <div className="overflow-hidden">
+            <Card.Img variant="top" src={coba2} className="card-img rounded-3" />
+          </div> 
           <Card.Body>
             <Card.Title>Pengukuhan Mahasiswa IT Del Angkatan 2022</Card.Title>
             <Card.Text>
@@ -128,7 +135,7 @@ function content() {
         <Card
           data-aos="flip-left"
           data-aos-duration="1500"
-          className=" container rounded-5"
+          className=" container rounded-3 kartu" 
         >
           <Form className="p-3">
             <h4 className="text-center py-2">Feedback</h4>

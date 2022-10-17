@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import logo_Del from '../Assets/logo_Del.png'
 import Dropdown from 'react-bootstrap/Dropdown'
-import "../components/NavbarComp.css"
+import "../components/Style.css"
 
 function BasicExample() {
   return (
