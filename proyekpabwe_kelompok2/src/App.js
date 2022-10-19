@@ -6,9 +6,10 @@ import Content from './components/Content'
 import Footer from './components/Footer'
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
-  Link
+  Link,
+  BrowserRouter
 } from "react-router-dom";
 
 
@@ -19,9 +20,15 @@ function App(){
       <Carousel/>
       <Content/>
       <Footer/>
-      {/* <Router>
-        <Route path='/' element={<Footer/>}></Route>
-      </Router> */}
+      {/* <BrowserRouter> */}
+        {/* <Router> */}
+          {/* <Route path='/' element={<Content/>}>
+            <Route path='/' element={<Content/>}/>
+            {/* <Route path='/Footer' element={</>}/> */}
+          {/* </Route> */}
+        {/* </Router> */}
+      {/* </BrowserRouter> */}
+      
     </div>
   );
 }
