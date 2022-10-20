@@ -7,6 +7,7 @@ import coba from "../Assets/coba.jpg";
 import coba1 from "../Assets/coba1.jpg";
 import coba2 from "../Assets/coba2.jpg";
 import { Mortarboard, People, JournalBookmark,EmojiLaughing } from "react-bootstrap-icons";
+import VisibilitySensor from "react-visibility-sensor";
 import CountUp from "react-countup";
 import "./Style.css";
 
@@ -21,6 +22,14 @@ const ColoredLine = ({ color }) => (
     }}
   />
 );
+const onScroll = () => (
+  ({ countUpRef, start }) => (
+    <VisibilitySensor onChange={start} delayedCall>
+        <span ref={countUpRef} />
+    </VisibilitySensor>
+  )
+)
+
 
 function content() {
   return (
@@ -31,7 +40,7 @@ function content() {
       <div
         data-aos="fade-right"
         className="container py-5 px-5 d-flex rounded-3"
-        style={{ backgroundColor: "gainsboro" }}
+        style={{ backgroundColor: "#f5f5f5" }}
       >
         <img
           src={kaprodi}
@@ -66,10 +75,10 @@ function content() {
       <div
         data-aos="fade-up w-100"
         className="container py-3 px-5 d-flex rounded-2"
-        style={{ backgroundColor: "gainsboro" }}
+        style={{ backgroundColor: "#f5f5f5" }}
       >
-        <h3 className="w-100">Event Terkini</h3>
-        <a className="w-100 position text-end">Lihat lebih banyak</a>
+        <h3 className="w-100 h2">Event Terkini</h3>
+        <a className="w-100 position text-end">Selengkapnya</a>
       </div>
       <CardGroup className="container py-3">
         <Card
@@ -168,43 +177,73 @@ function content() {
       </CardGroup>
       <CardGroup className="container my-5">
         <Card className="p-3 scaling border-0 d-flex flex-row ">
-          <Mortarboard size={60} color={"royalblue"} className={"m-auto"}></Mortarboard>
+          <Mortarboard size={80} color={"royalblue"} className={"m-auto"}></Mortarboard>
           <Card.Body>
             <Card.Title>Mahasiswa</Card.Title>
-            <Card.Text>
-                <CountUp isCounting end={1020} duration={3.2} />
+            <Card.Text className="h2" >
+                <CountUp isCounting end={1020} duration={2}>
+                {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
             </Card.Text>
           </Card.Body>
         </Card>
         <Card className="p-3 scaling border-0 d-flex flex-row">
-          <People size={60} color={"royalblue"} className={"m-auto"}></People>
+          <People size={80} color={"royalblue"} className={"m-auto"}></People>
             <Card.Body>
               <Card.Title>Dosen & Staff</Card.Title>
-              <Card.Text>
-                <CountUp isCounting end={50} duration={3.2} />
+              <Card.Text className="h2">
+                <CountUp isCounting end={50} duration={2}>
+                {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
+
               </Card.Text>
             </Card.Body> 
         </Card>
         <Card className="p-3 scaling border-0 d-flex flex-row">
-          <JournalBookmark size={55} color={"royalblue"} className={"m-auto"}></JournalBookmark>
+          <JournalBookmark size={75} color={"royalblue"} className={"m-auto"}></JournalBookmark>
           <Card.Body>
               <Card.Title>Publikasi</Card.Title>
-              <Card.Text>
-                <CountUp isCounting end={141} duration={3.2} />
+              <Card.Text className="h2">
+                <CountUp isCounting end={141} duration={2}>
+                {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
               </Card.Text>
           </Card.Body> 
         </Card>
         <Card className="p-3 scaling border-0 d-flex flex-row">
-          <EmojiLaughing size={55} color={"royalblue"} className={"m-auto"}></EmojiLaughing>
+          <EmojiLaughing size={75} color={"royalblue"} className={"m-auto"}></EmojiLaughing>
           <Card.Body>
               <Card.Title>Kepuasan Layanan</Card.Title>
-              <Card.Text>
-                <CountUp isCounting end={90} duration={3.2} />%
+              <Card.Text className="h2">
+                <CountUp isCounting end={90} duration={2} suffix="%">
+                    {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
               </Card.Text>
-              {/* <Card.Text>Coba</Card.Text> */}
           </Card.Body> 
         </Card>
       </CardGroup>
+      <div
+        data-aos="fade-up w-100"
+        className="container py-3 text-center "           
+      >
+        <h3 className="w-100 h2">Dosen</h3>
+      </div>
     </>
   );
 }
