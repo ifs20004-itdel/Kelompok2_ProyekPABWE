@@ -1,4 +1,5 @@
 import Table from 'react-bootstrap/Table';
+import Footer from './Footer';
 
 function Organisasi() {
   return (
@@ -37,7 +38,9 @@ function Organisasi() {
             <td>@twitter</td>
           </tr>
         </tbody>
-    </Table></>
+    </Table>
+    <Footer></Footer>
+    </>
   );
 }
 

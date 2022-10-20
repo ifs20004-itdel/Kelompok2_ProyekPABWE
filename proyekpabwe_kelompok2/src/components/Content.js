@@ -22,6 +22,7 @@ const ColoredLine = ({ color }) => (
     }}
   />
 );
+
 const onScroll = () => (
   ({ countUpRef, start }) => (
     <VisibilitySensor onChange={start} delayedCall>
