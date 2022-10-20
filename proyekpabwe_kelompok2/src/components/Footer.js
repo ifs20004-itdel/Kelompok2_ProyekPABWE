@@ -1,4 +1,6 @@
 //Tes footer
+
+
 function Footer(){
     return(
             <>
@@ -29,9 +31,9 @@ function Footer(){
       <div class="footer-sosmed col-md-3 mb-3 ">
         <h5>Sosial Media</h5>
         <div class="icon-sosial-media d-flex mt-4">
-          <a class="text-white" href="https://www.facebook.com/Institut.Teknologi.Del/" target="_blank"><i class="bx bxl-facebook-square me-3"></i></a>
-          <a class="text-white" href="https://www.youtube.com/channel/UCi_VutHsvtyaJQ84s9xdSDg" target="_blank"> <i class="bx bxl-youtube me-3"></i> </a>
-          <a class="text-white" href="https://www.instagram.com/it.del/?hl=id" target="_blank"><i class="bx bxl-instagram"></i> </a>
+          <a class="text-black" href="https://www.facebook.com/Institut.Teknologi.Del/" target="_blank"><i class="bx bxl-facebook-square me-3"></i></a>
+          <a class="text-black" href="https://www.youtube.com/channel/UCi_VutHsvtyaJQ84s9xdSDg" target="_blank"> <i class="bx bxl-youtube me-3"></i> </a>
+          <a class="text-black" href="https://www.instagram.com/it.del/?hl=id" target="_blank"><i class="bx bxl-instagram"></i> </a>
         </div>
       </div>
     </div>

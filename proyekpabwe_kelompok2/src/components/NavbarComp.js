@@ -5,8 +5,8 @@ import logo_Del from '../Assets/logo_Del.png'
 import { Routes, Route} from 'react-router-dom';
 import Homepage from './Homepage';
 import Prestasi from './Prestasi';
-import VisiMisi from './VisiMisi';
-import StrukturOrganisasi from './StrukturOrganisasi';
+import Footer from './Footer';
+import StrukturKurikulum from './StrukturKurikulum';
 import "../components/Style.css"
 import Kegiatan from './Kegiatan';
 
@@ -74,7 +74,7 @@ function BasicExample() {
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/prestasi">Prestasi</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/organisasi">Struktur Organisasi</NavDropdown.Item>
+                <NavDropdown.Item href="/kurikulum">Struktur Kurikulum</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
@@ -85,7 +85,6 @@ function BasicExample() {
             <Route path='/' element={<Homepage/>}></Route>
             <Route path='/kegiatan' element={<Kegiatan/>}></Route>
             <Route path='/prestasi' element={<Prestasi/>}></Route>
-            <Route path='/visiMisi' element={<VisiMisi/>}></Route>
             <Route path='/organisasi' element={<StrukturOrganisasi/>}></Route>
           </Routes>
       </div>
