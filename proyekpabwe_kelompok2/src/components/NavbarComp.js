@@ -2,13 +2,7 @@ import React,{useState} from 'react';
 import Container from 'react-bootstrap/Container';
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import logo_Del from '../Assets/logo_Del.png'
-import { Routes, Route} from 'react-router-dom';
-import Homepage from './Homepage';
-import Prestasi from './Prestasi';
-import Footer from './Footer';
-import StrukturKurikulum from './StrukturKurikulum';
 import "../components/Style.css"
-import Kegiatan from './Kegiatan';
 
 
 function BasicExample() {
@@ -61,7 +55,7 @@ function BasicExample() {
               </NavDropdown>
               <Nav.Link href="/kontak" className='text-light px-4'>Kontak</Nav.Link>
               <NavDropdown
-                title={<span className="text-light">Tentang Kita</span>}
+                title={<span className="text-light">Tentang Kami</span>}
                 id="basic-nav-dropdown"
                 className="dropdown"
                 show={show}
@@ -81,12 +75,6 @@ function BasicExample() {
         </Container>
       </Navbar>
       <div>
-          <Routes>
-            <Route path='/' element={<Homepage/>}></Route>
-            <Route path='/kegiatan' element={<Kegiatan/>}></Route>
-            <Route path='/prestasi' element={<Prestasi/>}></Route>
-            <Route path='/organisasi' element={<StrukturOrganisasi/>}></Route>
-          </Routes>
       </div>
       </>
     );

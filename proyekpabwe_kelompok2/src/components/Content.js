@@ -7,9 +7,11 @@ import coba from "../Assets/coba.jpg";
 import coba1 from "../Assets/coba1.jpg";
 import coba2 from "../Assets/coba2.jpg";
 import { Mortarboard, People, JournalBookmark,EmojiLaughing } from "react-bootstrap-icons";
+import { Routes, Route} from 'react-router-dom';
 import VisibilitySensor from "react-visibility-sensor";
 import CountUp from "react-countup";
 import "./Style.css";
+import StrukturKurikulum from './StrukturKurikulum';
 
 const ColoredLine = ({ color }) => (
   <hr
@@ -99,7 +101,7 @@ function content() {
               Program Pembinaan Mahasiswa Wirausaga (P2MW) merupakan program
               pengembangan usaha mahasiswa yang telah memiliki ...
             </Card.Text>
-            <Button variant="primary">Lihat Selengkapnya</Button>
+            <Button href="/artikel1" variant="primary">Lihat Selengkapnya</Button>
           </Card.Body>
         </Card>
         <Card
@@ -118,7 +120,7 @@ function content() {
               Elektro (FITE), FITE melakukan perlombaan E-Sport yang melibatkan
               para mahasiswa FITE. Beragam permainan ...
             </Card.Text>
-            <Button variant="primary">Lihat Selengkapnya</Button>
+            <Button href="/artikel2" variant="primary">Lihat Selengkapnya</Button>
           </Card.Body>
         </Card>
         <Card
@@ -137,7 +139,7 @@ function content() {
               Del resmi dikukuhkan pada Kegiatan Inaugurasi dan Dies Natalis
               bertempat ...
             </Card.Text>
-            <Button variant="primary">Lihat Selengkapnya</Button>
+            <Button href="/artikel3" variant="primary">Lihat Selengkapnya</Button>
           </Card.Body>
         </Card>
         <Card
@@ -162,9 +164,7 @@ function content() {
                 placeholder="Masukkan email"
                 autoComplete="off"
               />
-              {/* <Form.Text className="text-muted" style={{fontSize:"12px",paddingLeft:"10px"}}>
-                            We'll never share your email with anyone else.
-                        </Form.Text> */}
+
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Pesan</Form.Label>

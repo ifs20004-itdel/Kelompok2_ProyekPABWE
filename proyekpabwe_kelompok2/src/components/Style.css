@@ -22,3 +22,23 @@
 .dropdown-toggle::after {
     display: none !important; 
   }
+
+  /* Visi Misi */
+  figcaption{
+    position: absolute;
+    letter-spacing: 2px;
+    bottom: 1rem;
+    margin: 0 2rem;
+  }
+
+  .txtHover{
+    width: 180px
+  }
+  .txtHover:hover {
+    font-weight: bold !important; 
+  }
+
+  .sidebar{
+    position: sticky;
+    top: 80px;
+  }
