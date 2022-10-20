@@ -6,7 +6,7 @@ import { Routes, Route} from 'react-router-dom';
 import Homepage from './Homepage';
 import Prestasi from './Prestasi';
 import Footer from './Footer';
-import StrukturOrganisasi from './StrukturOrganisasi';
+import StrukturKurikulum from './StrukturKurikulum';
 import "../components/Style.css"
 import Kegiatan from './Kegiatan';
 
@@ -51,7 +51,7 @@ function BasicExample() {
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="staffDosen">Staff Dosen</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/organisasi">Struktur Organisasi</NavDropdown.Item>
+                <NavDropdown.Item href="/kurikulum">Struktur Kurikulum</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
@@ -62,7 +62,7 @@ function BasicExample() {
             <Route path='/' element={<Homepage/>}></Route>
             <Route path='/kegiatan' element={<Kegiatan/>}></Route>
             <Route path='/prestasi' element={<Prestasi/>}></Route>
-            <Route path='/organisasi' element={<StrukturOrganisasi/>}></Route>
+            <Route path='/kurikulum' element={<StrukturKurikulum/>}></Route>
           </Routes>
       </div></>
     );
