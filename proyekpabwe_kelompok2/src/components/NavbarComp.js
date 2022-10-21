@@ -21,7 +21,7 @@ function BasicExample() {
     setShow2(false);
 }
     return (
-      <><Navbar bg="primary" expand="lg" className="sticky-top opacity-75">
+      <><Navbar bg="primary" expand="lg" className=" opacity-75">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -64,7 +64,7 @@ function BasicExample() {
               >
                 <NavDropdown.Item href="/visiMisi">Visi Misi</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/staffDosen">Staff Dosen</NavDropdown.Item>
+                <NavDropdown.Item href="/staffDosen">Dosen Staff</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/prestasi">Prestasi</NavDropdown.Item>
                 <NavDropdown.Divider />

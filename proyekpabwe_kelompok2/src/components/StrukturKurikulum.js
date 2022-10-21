@@ -1,22 +1,27 @@
 import Table from 'react-bootstrap/Table';
 import Footer from './Footer'
 import {  Nav } from 'react-bootstrap';
+import img1 from '../Assets/plaza_ItDel.jpg'
 
 function Kurikulum() {
   return (
     <>
-      <div
-        className="py-3 px-5 text-center w-auto"
-        style={{ backgroundColor: "#f5f5f5" }}
-      >
-        <h3 className="w-100 h2">Struktur Kurikulum Program Studi Informatika Program Sarjana</h3>
-      </div>
+        <figure className='position-relative'>
+            <img
+                className=" w-100 fluid"
+                src={img1}
+                style={{ height: '350px', objectFit: 'cover' }}
+                alt="Plaza IT Del" />
+            <figcaption className='h1 text-light px-5 py-4 bg-dark bg-gradient bg-opacity-50 rounded-3'>
+                STRUKTUR KURIKULUM
+            </figcaption>
+        </figure>
       <br></br>
       <div className='container d-flex'>
         <div className='mt-5 sidebar'>
                 <Nav className=' bg-secondary bg-opacity-25 bg-gradient nav flex-column rounded-3 py-3 px-4 sidebar'>
                   <Nav.Link href="/visiMisi" className='text-dark py-3 txtHover'>Visi dan Misi</Nav.Link>
-                  <Nav.Link href="/staffDosen" className='text-dark py-3 txtHover'>Staff Dosen </Nav.Link>
+                  <Nav.Link href="/staffDosen" className='text-dark py-3 txtHover'>Dosen Staff</Nav.Link>
                   <Nav.Link href="/prestasi" className='text-dark py-3 txtHover'> Prestasi</Nav.Link>
                   <Nav.Link href="/kurikulum" className='text-dark py-3 txtHover'> Struktur Kurikulum</Nav.Link>
                 </Nav>

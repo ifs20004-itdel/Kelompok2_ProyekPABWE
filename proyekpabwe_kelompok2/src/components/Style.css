@@ -34,11 +34,12 @@
   .txtHover{
     width: 180px
   }
+  
   .txtHover:hover {
     font-weight: bold !important; 
   }
 
   .sidebar{
     position: sticky;
-    top: 80px;
+    top: 100px;
   }

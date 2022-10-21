@@ -21,7 +21,7 @@ function VisiMisi(){
           <div>
               <Nav className=' bg-secondary bg-opacity-25 bg-gradient nav flex-column rounded-3 py-3 px-4 w-100'>
                 <Nav.Link href="/visiMisi" className='text-dark py-3 txtHover'>Visi dan Misi</Nav.Link>
-                <Nav.Link href="/staffDosen" className='text-dark py-3 txtHover'>Staff Dosen </Nav.Link>
+                <Nav.Link href="/staffDosen" className='text-dark py-3 txtHover'>Dosen Staff </Nav.Link>
                 <Nav.Link href="/prestasi" className='text-dark py-3 txtHover'> Prestasi</Nav.Link>
                 <Nav.Link href="/kurikulum" className='text-dark py-3 txtHover'> Struktur Kurikulum</Nav.Link>
               </Nav>
