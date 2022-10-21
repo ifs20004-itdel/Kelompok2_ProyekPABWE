@@ -15,6 +15,8 @@ import { Mortarboard, People, JournalBookmark,EmojiLaughing } from "react-bootst
 import VisibilitySensor from "react-visibility-sensor";
 import CountUp from "react-countup";
 import "./Style.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const ColoredLine = ({ color }) => (
   <hr
@@ -35,6 +37,9 @@ const onScroll = () => (
     </VisibilitySensor>
   )
 )
+
+
+
 function content() {
   return (
     <>
@@ -167,11 +172,27 @@ function content() {
                 />
 
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Group className="mb-3" controlId="formBasicPesan">
                 <Form.Label>Pesan</Form.Label>
-                <Form.Control as="textarea" rows={3} />
+                <Form.Control as="textarea" rows={3} 
+                />
               </Form.Group>
-              <Button variant="primary" type="submit">
+              <Button variant="primary" type="submit" onClick={
+                (e) => {
+                  e.preventDefault();
+                  // Ambil data nama dari form
+                  const nama = document.getElementById("formBasicName").value;
+                  const email = document.getElementById("formBasicEmail").value;
+                  const pesan = document.getElementById("formBasicPesan").value;
+                  document.getElementById("card1Title").innerHTML = nama;
+                  document.getElementById("card1Email").innerHTML = email;
+                  document.getElementById("card1Text").innerHTML = pesan;
+                  //Kosongkan data
+                  document.getElementById("formBasicName").value = "";
+                  document.getElementById("formBasicEmail").value = "";
+                  document.getElementById("formBasicPesan").value = "";
+                }
+              }>
                 Submit
               </Button>
             </Form>
@@ -240,10 +261,12 @@ function content() {
             </Card.Body> 
           </Card>
         </CardGroup>
+        
       <div
         data-aos="fade-up w-100"
         className="container py-3 text-center "           
       >
+        <hr></hr>
         <h3 className="w-100 h2">Dosen</h3>
         <CardGroup className="container my-3">
         <Card className="p-3 scaling border-0 d-flex flex-column ">
@@ -277,9 +300,30 @@ function content() {
         data-aos="fade-up w-100"
         className="container py-3 text-center "           
       >
-        <h3 className="w-100 h2">Feedback</h3>
-        <div className="container bg-secondary">
-          
+        <hr></hr>
+        <h3 className="w-100 h2 mt-3">Feedback</h3>
+        <div className="container bg-secondary bg-opacity-25 p-4 m-4 rounded-3">
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={3}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+        <SwiperSlide>
+          <Card className="text-center">
+            <Card.Body>
+              <Card.Title id="card1Title">Card title</Card.Title>
+              <Card.Text id="card1Text">
+                This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.
+              </Card.Text>
+              <Card.Text>
+                <small className="text-muted" id = "card1Email">Last updated 3 mins ago</small>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </>
