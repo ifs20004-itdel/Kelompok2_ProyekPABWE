@@ -36,7 +36,7 @@ Lalu anda bebas mengedit file di dalamnya.
 
 Dependency tambahan (Perlu diunduh agar file dapat berjalan. Juga download node_modules):
     	"bootstrap-icons": "^1.9.1",
-	"react-bootstrap-icons": "^1.9.1",
+		"react-bootstrap-icons": "^1.9.1",
     	"react-bootstrap-sidebar-menu": "^2.0.3",
     	"react-countup": "^6.3.2",
     	"react-dom": "^18.2.0",
@@ -45,10 +45,6 @@ Dependency tambahan (Perlu diunduh agar file dapat berjalan. Juga download node_
     	"react-visibility-sensor": "^5.1.1",
     	"swiper": "^8.4.4",
     	"use-count-up": "^3.0.1",
-
-
-
-
 
 
 
