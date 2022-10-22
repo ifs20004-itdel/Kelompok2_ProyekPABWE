@@ -187,7 +187,7 @@ function content() {
                   document.getElementById("card1Title").innerHTML = nama;
                   document.getElementById("card1Email").innerHTML = email;
                   document.getElementById("card1Text").innerHTML = pesan;
-                  //Kosongkan data
+                  //reset form
                   document.getElementById("formBasicName").value = "";
                   document.getElementById("formBasicEmail").value = "";
                   document.getElementById("formBasicPesan").value = "";
@@ -304,14 +304,15 @@ function content() {
         <h3 className="w-100 h2 mt-3">Feedback</h3>
         <div className="container bg-secondary bg-opacity-25 p-4 m-4 rounded-3">
           <Swiper
+            id="main"
             spaceBetween={50}
             slidesPerView={3}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
           >
         <SwiperSlide>
-          <Card className="text-center">
-            <Card.Body>
+          <Card>
+            <Card.Body >
               <Card.Title id="card1Title">Card title</Card.Title>
               <Card.Text id="card1Text">
                 This is a wider card with supporting text below as a natural lead-in to
